@@ -1,0 +1,35 @@
+.cardpopulares {
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    height: 13rem;
+    width: 10rem;
+    overflow: hidden;
+    border-style: none;
+    border-radius: 2%;
+}
+
+.cardpopulares:hover {
+    transform: scale(1);
+    transition: .3s ease;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.324);
+    height: 21rem;
+}
+
+.card-img-top {
+    width: 11rem;
+    height: 12rem;
+    object-fit: cover;
+}
+
+.card-img-top:hover {
+    filter: brightness(1.1);
+    transition: .1s ease;
+}
+
+@media screen and (min-width: 700px) {
+    .cardpopulares {
+        height: 18rem;
+        width: 13rem;
+    }
+}

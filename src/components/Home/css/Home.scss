@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Guardian-EgypTT", "arial";
+}
+
+#homepage {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#landing {
+    display: flex;
+    columns: center;
+    justify-content: center;
+    // background-color: rgb(232, 227, 203);
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+img.sellers {
+    position: relative;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    position: relative;
+    object-fit: cover;
+}
+img.sellers:hover {
+    transform: scale(1.03);
+    transition: .3s ease;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.324);
+}
+
+.sectionsellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    position: relative;
+    justify-items: center;
+    margin: 6px;
+}
+
+p.sectionsellers {
+    flex-wrap: wrap;
+}
+
+.fontsellers {
+    display: flex;
+    justify-content: center;
+    padding:5px 12px 0;
+    margin: 0px 0px 8px;
+    h2 {
+        font-family: "Guardian-EgypTT";
+        font-size: 24px;
+    }
+}
+
+div.sellers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
+    width: 150px;
+    margin: 0.5rem;
+    a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    }
+    a:hover {
+        text-decoration-line: overline;
+    }
+}
+
+.sectionpopulares {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.sectiongift {
+    display: flex;
+    justify-content: center;
+    columns: center;
+    flex-wrap: wrap;
+}
+
+.sectioncreators {
+    display: flex;
+    justify-content: center;
+    columns: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+.buttoncreadores {
+    justify-content: center;
+    width: 280px;
+    border-radius: 30px;
+    background-color: azure;
+}
+.buttoncreadores:hover {
+    transform: scale(1.03);
+    transition: .3s ease;
+    background-color: azure;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.324);
+}
+.sectioncreators {
+    display: flex;
+    flex-direction: column;
+}  
+
+@media screen and (min-width: 700px) {
+    .sectionpopulares {
+        margin-top: 2px;
+    }
+    .sectioncreators {
+        display: flex;
+        flex-direction: row;
+    }  
+}
+
+@media screen and (max-width: 1000px) {
+    .sectionpopulares {
+        margin-top: 210px;
+    }
+}

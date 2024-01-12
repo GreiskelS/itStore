@@ -1,0 +1,22 @@
+.cardgift {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  height: 18rem;
+  width: 15rem;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardgift:hover {
+  transform: scale(1);
+  transition: 0.3s ease;
+  box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.324);
+  height: 19rem;
+}
+
+.cardgift img {
+  height: 13rem;
+  width: 15rem;
+}/*# sourceMappingURL=Cardgift.css.map */

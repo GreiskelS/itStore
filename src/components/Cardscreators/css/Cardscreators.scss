@@ -1,0 +1,38 @@
+
+.cardcreators {
+    display: flex;
+    margin: 10px;
+    height: 20rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.cardcreators img{
+    height: 12rem;
+    width: 100%;
+    border-radius: 0px 0px 0px 0;
+}
+
+#bodylen {
+    flex-direction:row;
+    height: 12rem;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+@media screen and (min-width: 700px) {
+    div#bodylen.card {
+        flex-direction:column;
+        height: 18rem;
+        width: 13rem;
+    }
+    .cardcreators img{
+        height: 12rem;
+        width: 13rem;    
+    }
+    
+.cardcreators {
+    height: 12rem;
+    width: 13rem; 
+}
+}

@@ -1,0 +1,144 @@
+.bg-body-tertiary {
+   position: fixed;
+   z-index: 1000;
+   width: 100%;
+}
+
+.logo {
+   align-items: end;
+   margin: 0% 25% 0% 0%;
+}
+
+img.logo {
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.headerHome {
+   display: flex;
+}
+
+.buttonsheader {
+align-items: start;
+}
+
+#buttonentry {
+   margin: 1% 1% 1% 0%;
+   height: 40px;
+   width: 50px;
+   background-color: transparent;
+   border-style: none;
+   padding: 9px 2px 0px 0px;
+   border-radius: 20%;
+}
+#buttonentry:hover {
+background-color: rgb(224, 236, 236);
+}
+
+#buttonlanguage {
+   margin: 1% 1% 1% 0%;
+   height: 40px;
+   width: 50px;
+   border-radius: 45%;
+   background-color: transparent;
+   border-style: none;
+   padding: 5px 2px 0px 0px;
+   img {
+      height: 25px;
+      width: auto;
+   }
+}
+#buttonlanguage:hover {
+   background-color: rgba(148, 220, 201, 0.758);
+   }
+
+#buttonlike {
+   margin: 1% 1% 1% 0%;
+   height: 40px;
+   width: 50px;
+   border-radius: 45%;
+   background-color: transparent;
+   border-style: none;
+   padding: 5px 2px 0px 0px;
+   img {
+      height: 25px;
+      width: auto;
+   }
+}
+#buttonlike:hover {
+   background-color: rgba(148, 220, 201, 0.758);
+   }
+
+#buttonkart {
+   margin: 1% 1% 1% 0%;
+   height: 40px;
+   width: 50px;
+   background-color: transparent;
+   border-style: none;
+   padding: 5px 2px 0px 0px;
+   border-radius: 45%;
+   img {
+      height: 25px;
+      width: auto;
+   }
+}
+#buttonkart:hover {
+   background-color: rgba(148, 220, 201, 0.758);
+   }
+
+#buttonburguer {
+   margin: 1% 19% 0% 0%;
+   height: 40px;
+   img {
+      height: 40px;
+      width: auto;
+   }
+}
+
+#buttonsearchnav {
+   height: 31px;
+   width: 33px;
+   position: absolute;
+   background-color: rgb(214, 235, 218);
+   margin: 0.8% 1% 0% 89%;
+   img {
+      height: 22px;
+      width: auto;
+   }
+}
+
+.navbar>div.container-fluid {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+button.navbar-toggler.collapsed {
+   background-color: transparent;
+   border-style: none;
+}
+
+.d-flex {
+   position: relative;
+}
+
+.navbar-toggler.collapsed {
+   width: 50px;
+}
+.navbar-toggler.collapsed:hover {
+   background-color: rgba(148, 220, 201, 0.758);
+   }
+
+input.me-2.form-control {
+   width: 60rem;
+}
+
+
+@media screen and (max-width: 1250px) {
+   input.me-2.form-control {
+      width: 25rem;
+   }
+}
