@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-function FetchLink({ assets }) {
+function Links({ cardLink }) {
+
   const [link, setLink] = useState(null);
 
   useEffect(() => {
-    const apiUrl = `https://github.com/GreiskelS/Assets.proyects/blob/main/assets/DSC08400.JPG?raw=true${assets}`;
-            console.log(apiUrl);
+    const apiUrl = `https://cdn.glitch.global/1eb2c8f5-eaaf-489e-a99f-7b4f5c5b5810/1.JPG?v=1705420115738${cardLink}`;
+
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
@@ -14,9 +15,12 @@ function FetchLink({ assets }) {
       .catch((error) => {
         console.error('Error al obtener el enlace:', error);
       });
-  }, [assets]);
+  }, [cardLink]);
 
-    return link;
-}
+  return link;
+<>
 
-export default FetchLink
+</>
+};
+
+export default Links;

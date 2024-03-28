@@ -2,18 +2,19 @@
     display: flex;
     justify-content: center;
     margin: 8px;
-    height: 13rem;
+    height: 15rem;
     width: 10rem;
     overflow: hidden;
     border-style: none;
     border-radius: 2%;
+    transform: scale(1);
+    transition: .3s ease-in-out;
 }
 
 .cardpopulares:hover {
-    transform: scale(1);
-    transition: .3s ease;
-    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.324);
-    height: 21rem;
+    transition: .3s ease-in-out;
+    box-shadow: 1px 1px 14px rgba(116, 112, 112, 0.324);
+    height: 20rem;
 }
 
 .card-img-top {
@@ -23,13 +24,13 @@
 }
 
 .card-img-top:hover {
-    filter: brightness(1.1);
-    transition: .1s ease;
+    filter: brightness(1.05);
 }
 
 @media screen and (min-width: 700px) {
     .cardpopulares {
-        height: 18rem;
+        height: 15rem;
         width: 13rem;
+        position: relative;
     }
 }

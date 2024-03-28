@@ -1,42 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  width: 100%;
-  font-family: "Guardian-EgypTT", "arial";
+  font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
 }
 
 #homepage {
-  justify-content: center;
-  align-items: center;
   align-content: center;
   text-align: center;
 }
 
 #landing {
+  display: block;
   display: flex;
-  -moz-columns: center;
-       columns: center;
   justify-content: center;
   text-align: center;
   height: 200px;
   width: 100%;
-  position: relative;
-}
-
-img.sellers {
-  position: relative;
-  height: 8rem;
-  width: 8rem;
-  border-radius: 50%;
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
 
 img.sellers:hover {
   transform: scale(1.03);
-  transition: 0.3s ease;
-  box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.324);
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 1px 14px rgba(116, 112, 112, 0.324);
 }
 
 .sectionsellers {
@@ -45,24 +31,30 @@ img.sellers:hover {
   justify-content: center;
   align-content: space-between;
   text-align: center;
-  position: relative;
   justify-items: center;
-  margin: 6px;
+  margin: 2rem;
 }
-
-p.sectionsellers {
+.sectionsellers p {
   flex-wrap: wrap;
+}
+.sectionsellers img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 0.5rem;
 }
 
 .fontsellers {
   display: flex;
   justify-content: center;
-  padding: 5px 12px 0;
-  margin: 0px 0px 8px;
+  padding: 6px 4px 0;
 }
 .fontsellers h2 {
   font-family: "Guardian-EgypTT";
   font-size: 24px;
+  padding-top: 8rem;
 }
 
 div.sellers {
@@ -78,6 +70,7 @@ div.sellers a {
   flex-direction: column;
   text-decoration: none;
   color: black;
+  margin: 1rem;
 }
 div.sellers a:hover {
   text-decoration-line: overline;
@@ -93,50 +86,25 @@ div.sellers a:hover {
 .sectiongift {
   display: flex;
   justify-content: center;
-  -moz-columns: center;
-       columns: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .sectioncreators {
   display: flex;
   justify-content: center;
-  -moz-columns: center;
-       columns: center;
-  align-items: center;
-  margin: 20px;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.buttoncreadores {
-  justify-content: center;
-  width: 280px;
-  border-radius: 30px;
-  background-color: azure;
-}
-
-.buttoncreadores:hover {
-  transform: scale(1.03);
-  transition: 0.3s ease;
-  background-color: azure;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.324);
-}
-
-.sectioncreators {
-  display: flex;
-  flex-direction: column;
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 2000px) {
   .sectionpopulares {
     margin-top: 2px;
   }
-  .sectioncreators {
-    display: flex;
-    flex-direction: row;
+  h2.fontsellers {
+    padding-top: 8rem;
   }
-}
-@media screen and (max-width: 1000px) {
-  .sectionpopulares {
-    margin-top: 210px;
+  .sectioncreators {
+    margin-top: 2px;
   }
 }/*# sourceMappingURL=Home.css.map */

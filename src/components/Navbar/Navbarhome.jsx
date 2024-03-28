@@ -10,25 +10,17 @@ import './css/Navbar.css'
 function Navbarhome() {
   return (
     <div>
-      <header>
+      <header id='headnav'>
       <section className='headerHome'>
         <img className='logo' src="src/assets/Black and White Round Fashion Monogram Logo.png" alt="Logo de Store" />
-        <div className='buttonsheader'>
-        <Button variant="light" id='buttonentry'><h6><strong>Entrar</strong></h6></Button>{''}
-        <Button variant="light" id='buttonlanguage'><img src="src/assets/bandera.png" alt="Language" /></Button>{''}
-        <Button variant="light" id='buttonlike'><img src="src/assets/like.png" alt="Like or save" /></Button>{''}
-        <Button variant="light" id='buttonkart'><img src="src/assets/kart.png" alt="Kart shopping" /></Button>{''}
-        </div>
-        </section>
-      </header>
-     
-     
-      {[false, ].map((expand) => (
+        
+        {[false, ].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
+            
             <Navbar.Brand href="#"></Navbar.Brand>
+            
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <div>
             <Form className="d-flex">
                   <Form.Control
                     type="search"
@@ -38,7 +30,6 @@ function Navbarhome() {
                   />
                   <Button variant="outline-success" id='buttonsearchnav'><img className='buttonsearchnav' src="src/assets/lupa.png" alt="search" /></Button>
                 </Form>
-                </div>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -61,9 +52,15 @@ function Navbarhome() {
           </Container>
         </Navbar>
        ))}
-
-         
-   
+        
+        <div className='buttonsheader'>
+        <Button variant="light" id='buttonentry'><h6><strong>Entrar</strong></h6></Button>{''}
+        <Button variant="light" id='buttonlanguage'><img src="src/assets/bandera.png" alt="Language" /></Button>{''}
+        <Button variant="light" id='buttonlike'><img src="src/assets/like.png" alt="Like or save" /></Button>{''}
+        <Button variant="light" id='buttonkart'><img src="src/assets/kart.png" alt="Kart shopping" /></Button>{''}
+        </div>
+        </section>
+      </header>
     </div>
   );
 }

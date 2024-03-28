@@ -7,12 +7,13 @@
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.3s ease-in-out;
 }
 
 .cardgift:hover {
-  transform: scale(1);
-  transition: 0.3s ease;
-  box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.324);
+  transform: scale(1.04);
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 1px 14px rgba(116, 112, 112, 0.324);
   height: 19rem;
 }
 

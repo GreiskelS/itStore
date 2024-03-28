@@ -5,7 +5,7 @@ import './css/Cardscreators.css';
 function Cardscreators() {
   return (
     <div className='cardcreators'>
-    <Card style={{ width: '30rem' }} id="bodylen">
+    <Card id="bodylen">
       <Card.Img variant="top" src="src/assets/DSC08400.JPG" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>

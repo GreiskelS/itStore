@@ -1,12 +1,19 @@
-.bg-body-tertiary {
-  position: fixed;
-  z-index: 1000;
+section.headerHome {
+  display: flex;
+  flex-wrap: nowrap;
   width: 100%;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+}
+
+nav.bg-body-tertiary.mb-3.navbar.navbar-light {
+  background-color: var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity) !important;
 }
 
 .logo {
   align-items: end;
-  margin: 0% 25% 0% 0%;
 }
 
 img.logo {
@@ -15,10 +22,6 @@ img.logo {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.headerHome {
-  display: flex;
 }
 
 .buttonsheader {
@@ -104,14 +107,15 @@ img.logo {
 
 #buttonsearchnav {
   height: 31px;
-  width: 33px;
-  position: absolute;
+  width: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: rgb(214, 235, 218);
-  margin: 0.8% 1% 0% 89%;
 }
-#buttonsearchnav img {
-  height: 22px;
-  width: auto;
+
+div.container-fluid {
+  justify-content: center;
+  background-color: white;
 }
 
 .navbar > div.container-fluid {
@@ -128,22 +132,83 @@ button.navbar-toggler.collapsed {
 
 .d-flex {
   position: relative;
+  overflow: hidden;
 }
 
 .navbar-toggler.collapsed {
   width: 50px;
+  background-color: white;
 }
 
 .navbar-toggler.collapsed:hover {
   background-color: rgba(148, 220, 201, 0.758);
 }
 
-input.me-2.form-control {
-  width: 60rem;
-}
-
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 600px) {
   input.me-2.form-control {
-    width: 25rem;
+    width: 50rem;
+  }
+  nav.bg-body-tertiary.mb-3.navbar.navbar-light {
+    width: 100%;
+    justify-content: center;
+  }
+  #buttonentry {
+    margin: 1% 1% 1% 0%;
+    height: 40px;
+    width: 60px;
+    background-color: transparent;
+    border-style: none;
+    padding: 9px 2px 0px 0px;
+    border-radius: 20%;
+  }
+  .buttonsheader {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  section.headerHome {
+    width: 100%;
+  }
+  input.me-2.form-control {
+    width: 50rem;
+  }
+  #buttonsearchnav {
+    height: 31px;
+    width: 33px;
+    background-color: rgb(214, 235, 218);
+  }
+  #buttonsearchnav img {
+    height: 22px;
+    width: 100%;
+  }
+  div.container-fluid {
+    width: 100%;
+  }
+  .navbar > div.container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  nav.bg-body-tertiary.mb-3.navbar.navbar-light {
+    margin-top: 3.1rem;
+    position: fixed;
+    width: 100%;
+  }
+  #buttonentry {
+    margin: 1% 1% 1% 0%;
+    height: 40px;
+    width: 60px;
+    background-color: transparent;
+    border-style: none;
+    padding: 9px 2px 0px 0px;
+    border-radius: 20%;
+  }
+  .buttonsheader {
+    width: 100%;
+  }
+  div.buttonsheader {
+    display: block;
+    border-left: 10px;
   }
 }/*# sourceMappingURL=Navbar.css.map */
