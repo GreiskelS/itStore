@@ -1,0 +1,60 @@
+.sectionsellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    justify-items: center;
+    margin: 2rem;
+    p {
+        flex-wrap: wrap;
+    }
+    img {
+        height: 9rem;
+        width: 9rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 0.5rem;
+    }
+}
+
+img.sellers:hover {
+    transform: scale(1.03);
+    transition: .3s ease-in-out;
+    box-shadow: 1px 1px 14px rgba(116, 112, 112, 0.324);
+}
+
+a.fontsellers {
+    display: flex;
+    justify-content: center;
+    font-family: "Guardian-EgypTT";
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+img.sellers:hover {
+    object-fit: cover;
+    transform: scale(1.08);
+    transition: .3s ease-in-out;
+    box-shadow: 1px 1px 14px rgba(116, 112, 112, 0.324);
+}
+
+div.sellers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
+    width: 150px;
+    margin: 0.5rem;
+    a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: black;
+        margin: 1rem;
+    }
+    a:hover {
+        text-decoration-line: overline;
+    }
+}
+

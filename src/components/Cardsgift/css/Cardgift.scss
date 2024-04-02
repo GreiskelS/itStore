@@ -1,21 +1,42 @@
-
 .cardgift {
     display: flex;
     justify-content: center;
     margin: 10px;
-    height: 18rem;
-    width: 15rem;
     overflow: hidden;
-    object-fit: cover;
-    transition: .3s ease-in-out;
+    // transition: .3s ease-in-out;
+    border-style: none;
+    border-radius: 2%;
+    border-bottom: ridge rgba(0, 0, 0, 0.091);
+
+    a, p {
+        text-decoration-line: none;
+    }
 }
+.card.giftbody {
+    height: 19rem;
+    width: 15rem; 
+}
+
 .cardgift:hover {
     transform: scale(1.04);
     transition: .3s ease-in-out;
     box-shadow: 1px 1px 14px rgba(116, 112, 112, 0.324);
     height: 19rem;
 }
-.cardgift img{
+
+.cardgift img {
+    object-fit: cover;
     height: 13rem;
     width: 15rem;
+}
+
+@media screen and (max-width: 800px) {
+    div.cardgift {
+        height: 18rem;
+        width: 15rem;
+    }
+
+    .cardgift img {
+        border-radius: 0px 2px 2px 0px;
+    }
 }

@@ -2,12 +2,18 @@
   display: flex;
   justify-content: center;
   margin: 10px;
-  height: 18rem;
-  width: 15rem;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.3s ease-in-out;
+  border-style: none;
+  border-radius: 2%;
+  border-bottom: ridge rgba(0, 0, 0, 0.091);
+}
+.cardgift a, .cardgift p {
+  text-decoration-line: none;
+}
+
+.card.giftbody {
+  height: 19rem;
+  width: 15rem;
 }
 
 .cardgift:hover {
@@ -18,6 +24,18 @@
 }
 
 .cardgift img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 13rem;
   width: 15rem;
+}
+
+@media screen and (max-width: 800px) {
+  div.cardgift {
+    height: 18rem;
+    width: 15rem;
+  }
+  .cardgift img {
+    border-radius: 0px 2px 2px 0px;
+  }
 }/*# sourceMappingURL=Cardgift.css.map */

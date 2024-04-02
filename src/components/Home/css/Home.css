@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
 }
 
@@ -19,68 +18,12 @@
   transition: 0.3s ease-in-out;
 }
 
-img.sellers:hover {
-  transform: scale(1.03);
-  transition: 0.3s ease-in-out;
-  box-shadow: 1px 1px 14px rgba(116, 112, 112, 0.324);
-}
-
-.sectionsellers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-  text-align: center;
-  justify-items: center;
-  margin: 2rem;
-}
-.sectionsellers p {
-  flex-wrap: wrap;
-}
-.sectionsellers img {
-  height: 8rem;
-  width: 8rem;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 0.5rem;
-}
-
-.fontsellers {
-  display: flex;
-  justify-content: center;
-  padding: 6px 4px 0;
-}
-.fontsellers h2 {
-  font-family: "Guardian-EgypTT";
-  font-size: 24px;
-  padding-top: 8rem;
-}
-
-div.sellers {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 200px;
-  width: 150px;
-  margin: 0.5rem;
-}
-div.sellers a {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: black;
-  margin: 1rem;
-}
-div.sellers a:hover {
-  text-decoration-line: overline;
-}
-
 .sectionpopulares {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .sectiongift {
@@ -88,6 +31,7 @@ div.sellers a:hover {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .sectioncreators {
@@ -95,6 +39,11 @@ div.sellers a:hover {
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 15px;
+}
+
+h2.fontsellers {
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 2000px) {
@@ -102,7 +51,7 @@ div.sellers a:hover {
     margin-top: 2px;
   }
   h2.fontsellers {
-    padding-top: 8rem;
+    margin-top: 7rem;
   }
   .sectioncreators {
     margin-top: 2px;

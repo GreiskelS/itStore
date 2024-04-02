@@ -6,10 +6,8 @@ import Cardsgift from '../Cardsgift/Cardsgift'
 import Cardscreators from '../Cardscreators/Cardscreators'
 import Button from 'react-bootstrap/Button';
 import Sellerscard from '../Sellers/Sellerscard'
-// import Links from '../FetchLink/Links';
 
 const Home = () => {
-
   return (
     <div id='homepage'>
       <header>

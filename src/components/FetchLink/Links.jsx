@@ -1,26 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-function Links({ cardLink }) {
+const Links = () => {
+  const urlsellers = "https://github.com/GreiskelS/Assets.proyects/blob/main/assets/DSC08400.JPG?raw=true";
+  // const urlpopulares = "https://github.com/GreiskelS/Assets.proyects/blob/main/assets/DSC08400.JPG?raw=true";
 
-  const [link, setLink] = useState(null);
+  return (
+    <>
+      <img src={urlsellers} 
+      alt="foto sección 1" />
+    {/* <img src={urlpopulares} 
+      alt="foto sección 2" /> */}
+    </>
+  )
+}
 
-  useEffect(() => {
-    const apiUrl = `https://cdn.glitch.global/1eb2c8f5-eaaf-489e-a99f-7b4f5c5b5810/1.JPG?v=1705420115738${cardLink}`;
-
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        setLink(data.link);
-      })
-      .catch((error) => {
-        console.error('Error al obtener el enlace:', error);
-      });
-  }, [cardLink]);
-
-  return link;
-<>
-
-</>
-};
-
-export default Links;
+export default Links

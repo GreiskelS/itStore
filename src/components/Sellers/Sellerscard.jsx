@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react';
+import './css/sellers.css';
+import Links from '../FetchLink/Links';
 
 const Sellerscard = () => {
 
+  const sellers1 = Links({ sellers: 1 });
+
   return (
     <div className='sellers'>
-      <a href="/" ><img className='sellers' src="https://cdn.glitch.global/1eb2c8f5-eaaf-489e-a99f-7b4f5c5b5810/1.JPG?v=1705420115738"
-        alt="foto de la sección" />calendarios</a>
-  </div>
+      <a href='/' className='fontsellers'>{sellers1}Calendarios</a>
+    </div>
   )
 }
 
