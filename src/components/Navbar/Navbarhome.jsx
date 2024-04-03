@@ -8,11 +8,17 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import './css/Navbar.css'
 
 function Navbarhome() {
+  const logo = "https://cdn.glitch.global/55101d5a-1c75-498d-8bf8-5a3bd396a138/Logo.png?v=1712071547142";
+  const buttonsearchnav = "src/assets/lupa.png";
+  const buttonlanguage = "src/assets/bandera.png";
+  const buttonlike = "src/assets/like.png";
+  const buttonkart = "src/assets/kart.png";
+  
   return (
     <div>
       <header id='headnav'>
         <section className='headerHome'>
-          <img className='logo' src="https://cdn.glitch.global/55101d5a-1c75-498d-8bf8-5a3bd396a138/Logo.png?v=1712071547142" alt="Logo de Store" />
+          <img className='logo' src={logo} alt="Logo de Store" />
           {[false,].map((expand) => (
             <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
               <Container fluid>
@@ -25,7 +31,7 @@ function Navbarhome() {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <img id='buttonsearchnav' src="src/assets/lupa.png" alt="search" />
+                  <img id='buttonsearchnav' src={buttonsearchnav} alt="search" />
                 </Form>
                 <Navbar.Offcanvas
                   id={`offcanvasNavbar-expand-${expand}`}
@@ -49,9 +55,9 @@ function Navbarhome() {
           ))}
           <div className='buttonsheader'>
             <Button variant="light" id='buttonentry'><h6><strong>Entrar</strong></h6></Button>{''}
-            <Button variant="light" id='buttonlanguage'><img src="src/assets/bandera.png" alt="Language" /></Button>{''}
-            <Button variant="light" id='buttonlike'><img src="src/assets/like.png" alt="Like or save" /></Button>{''}
-            <Button variant="light" id='buttonkart'><img src="src/assets/kart.png" alt="Kart shopping" /></Button>{''}
+            <Button variant="light" id='buttonlanguage'><img src={buttonlanguage} alt="Language" /></Button>{''}
+            <Button variant="light" id='buttonlike'><img src={buttonlike} alt="Like or save" /></Button>{''}
+            <Button variant="light" id='buttonkart'><img src={buttonkart} alt="Kart shopping" /></Button>{''}
           </div>
         </section>
       </header>

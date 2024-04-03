@@ -4,8 +4,8 @@ import Navbarhome from '../Navbar/Navbarhome'
 import Cards from '../Cardspopulares/Cards'
 import Cardsgift from '../Cardsgift/Cardsgift'
 import Cardscreators from '../Cardscreators/Cardscreators'
-import Button from 'react-bootstrap/Button';
 import Sellerscard from '../Sellers/Sellerscard'
+import Button from 'react-bootstrap/Button';
 
 const Home = () => {
   return (
@@ -21,7 +21,6 @@ const Home = () => {
         <Sellerscard />
         <Sellerscard />
         <Sellerscard />
-        <Sellerscard />
       </section>
 
       <h2 className='fontpopulares'>Regalos populares en estos momentos</h2>
@@ -31,11 +30,11 @@ const Home = () => {
         <Cards />
         <Cards />
         <Cards />
+        <Cards />
       </section>
       
       <h2 className='fontgift'>Visita nuestras categorías populares de regalos</h2>
       <section className='sectiongift'>
-        <Cardsgift />
         <Cardsgift />
         <Cardsgift />
         <Cardsgift />
