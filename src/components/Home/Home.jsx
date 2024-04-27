@@ -1,26 +1,27 @@
 import React from 'react';
-import './css/Home.css'
-import Navbarhome from '../Navbar/Navbarhome'
-import Cards from '../Cardspopulares/Cards'
-import Cardsgift from '../Cardsgift/Cardsgift'
-import Cardscreators from '../Cardscreators/Cardscreators'
-import Sellerscard from '../Sellers/Sellerscard'
+import './css/Home.css';
+import Navbarhome from '../Navbar/Navbarhome';
+import Cards from '../Cardspopulares/Cards';
+import Cardsgift from '../Cardsgift/Cardsgift';
+import Cardscreators from '../Cardscreators/Cardscreators';
+import Sellerscard from '../Sellers/Sellerscard';
 import Button from 'react-bootstrap/Button';
 
+
 const Home = () => {
+ 
   return (
     <div id='homepage'>
       <header>
         <Navbarhome />
       </header>
 
-      <h2 className='fontsellers'>Encuentra cosas que te enamoren. Apoya a vendedores independientes. Solo en Etsy.</h2>
+      <h2 className='fontsellers'>Encuentra cosas que te enamoren. <br />Apoya a vendedores independientes. <br />Solo en It STORE.</h2>
       <section className='sectionsellers'>
-        <Sellerscard />
-        <Sellerscard />
-        <Sellerscard />
-        <Sellerscard />
-        <Sellerscard />
+      <Sellerscard/>
+      <Sellerscard/>
+      <Sellerscard/>
+      <Sellerscard/>
       </section>
 
       <h2 className='fontpopulares'>Regalos populares en estos momentos</h2>
@@ -32,7 +33,7 @@ const Home = () => {
         <Cards />
         <Cards />
       </section>
-      
+
       <h2 className='fontgift'>Visita nuestras categorías populares de regalos</h2>
       <section className='sectiongift'>
         <Cardsgift />
@@ -41,8 +42,8 @@ const Home = () => {
         <Cardsgift />
         <Cardsgift />
       </section>
-      
-      <h4 className='fontcreator'>¿Buscas comprar algo en tu país? Lo tienes en Etsy.</h4>
+
+      <h4 className='fontcreator'>¿Buscas comprar algo en tu país? Lo tienes en It Store.</h4>
 
       <h2 className='fontcreator'><strong>Descubre tiendas de España</strong></h2>
 

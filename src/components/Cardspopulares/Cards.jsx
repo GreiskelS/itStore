@@ -11,8 +11,8 @@ function Cards() {
       <a href="/">
         <Card className='popularesbody'>
           <Card.Img variant="top" src={urlpopulars} /><Card.Img/>
-          <Button variant="light" id='buttonlike'><img src={buttonlike} alt="Like or save" /></Button>{''}
-          <Card.Body>
+          <Button variant="light" id='buttonlike'><img src={buttonlike} alt="Likesave" /></Button>{''}
+          <Card.Body className='popularbody'>
             <Card.Title>Card Title</Card.Title>
             <Card.Text>
               Some quick example

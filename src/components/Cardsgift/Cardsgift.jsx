@@ -8,7 +8,7 @@ function Cardsgift() {
     <div className='cardgift'>
       <a href="/">
         <Card className='giftbody'>
-          <Card.Img variant="top" src={urlgift} />
+          <Card.Img variant="top" src={urlgift} alt="Likesave"/>
           <Card.Body >
             <Card.Title>Card Title</Card.Title>
             <Card.Text>

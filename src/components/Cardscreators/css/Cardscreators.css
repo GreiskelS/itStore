@@ -35,6 +35,7 @@ img.card-img-top.creatorsimg {
   }
   #bodylen.card {
     flex-direction: row;
+    width: auto;
   }
   img.card-img-top.creatorsimg {
     -o-object-fit: cover;

@@ -40,13 +40,18 @@ function Navbarhome() {
                 >
                   <Offcanvas.Header closeButton>
                     <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                      otro
+                    <img className='logo' src={logo} alt="Logo de Store" />
+                    IT STORE
                     </Offcanvas.Title>
                   </Offcanvas.Header>
-                  <Offcanvas.Body className='navbar-toggler collapsed'>
+                  <Offcanvas.Body className='navbar-toggler collapsed' id='navoff'>
                     <Nav className="justify-content-end flex-grow-1 pe-3">
-                      <Nav.Link href="#action1">Home</Nav.Link>
-                      <Nav.Link href="#action2">Link</Nav.Link>
+                      <Nav.Link href="/"><h2><strong>Home</strong></h2></Nav.Link>
+                      <hr />
+                      <Nav.Link href="/Destacados"><h3>📌Destacados</h3></Nav.Link>
+                      <Nav.Link href="/Populares"><h3>❤️‍🔥Populares</h3></Nav.Link>
+                      <Nav.Link href="/MejoresRegalos"><h3>🎁Mejores regalos</h3></Nav.Link>
+                      <Nav.Link href="/Creadores"><h3>🪆Creadores Locales</h3></Nav.Link>
                     </Nav>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>

@@ -16,7 +16,7 @@ function Cardscreators() {
         <Card.Text>
           Some quick example text to build
         </Card.Text>
-        <Button variant="light" id='buttonlike'><img src={buttonlike} alt="Like or save" /></Button>{''}
+        <Button variant="light" id='buttonlike'><img src={buttonlike} alt="Likeorsave" /></Button>{''}
       </Card.Body>
     </Card>
     </a>
