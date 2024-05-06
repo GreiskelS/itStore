@@ -6,19 +6,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './css/Navbar.css'
+import {logo, buttonsearchnav, buttonlanguage, buttonlike, buttonkart } from '../Assets/Assets';
 
 function Navbarhome() {
-  const logo = "https://cdn.glitch.global/55101d5a-1c75-498d-8bf8-5a3bd396a138/Logo.png?v=1712071547142";
-  const buttonsearchnav = "src/assets/lupa.png";
-  const buttonlanguage = "src/assets/bandera.png";
-  const buttonlike = "src/assets/like.png";
-  const buttonkart = "src/assets/kart.png";
-  
   return (
     <div>
       <header id='headnav'>
         <section className='headerHome'>
-          <img className='logo' src={logo} alt="Logo de Store" />
+          <img className='logo' src={logo} alt="Logo Store" />
           {[false,].map((expand) => (
             <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
               <Container fluid>
@@ -40,18 +35,18 @@ function Navbarhome() {
                 >
                   <Offcanvas.Header closeButton>
                     <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    <img className='logo' src={logo} alt="Logo de Store" />
+                    <img className='logo' src={logo} alt="Logo Store" />
                     IT STORE
                     </Offcanvas.Title>
                   </Offcanvas.Header>
                   <Offcanvas.Body className='navbar-toggler collapsed' id='navoff'>
                     <Nav className="justify-content-end flex-grow-1 pe-3">
                       <Nav.Link href="/"><h2><strong>Home</strong></h2></Nav.Link>
-                      <hr />
-                      <Nav.Link href="/Destacados"><h3>📌Destacados</h3></Nav.Link>
-                      <Nav.Link href="/Populares"><h3>❤️‍🔥Populares</h3></Nav.Link>
-                      <Nav.Link href="/MejoresRegalos"><h3>🎁Mejores regalos</h3></Nav.Link>
-                      <Nav.Link href="/Creadores"><h3>🪆Creadores Locales</h3></Nav.Link>
+                      <hr/>
+                      <Nav.Link href="/Destacados"><h3>▪️Destacados</h3></Nav.Link>
+                      <Nav.Link href="/Populares"><h3>▪️Populares</h3></Nav.Link>
+                      <Nav.Link href="/MejoresRegalos"><h3>▪️Mejores regalos</h3></Nav.Link>
+                      <Nav.Link href="/Creadores"><h3>▪️Creadores Locales</h3></Nav.Link>
                     </Nav>
                   </Offcanvas.Body>
                 </Navbar.Offcanvas>

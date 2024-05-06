@@ -1,9 +1,8 @@
 import Card from 'react-bootstrap/Card';
 import './css/Cardgift.css'
+import {urlgift} from '../Assets/Assets';
 
 function Cardsgift() {
-  const urlgift = "https://github.com/GreiskelS/Assets.proyects/blob/main/assets/DSC08400.JPG?raw=true";
-
   return (
     <div className='cardgift'>
       <a href="/">
@@ -20,5 +19,4 @@ function Cardsgift() {
     </div>
   );
 }
-
 export default Cardsgift;

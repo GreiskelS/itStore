@@ -1,11 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './css/Cards.css'
+import {urlpopulars, buttonlike} from '../Assets/Assets';
 
 function Cards() {
-  const urlpopulars = "https://github.com/GreiskelS/Assets.proyects/blob/main/assets/DSC08400.JPG?raw=true";
-  const buttonlike = "src/assets/like.png";
-
+  
   return (
     <div className='cardpopulares'>
       <a href="/">

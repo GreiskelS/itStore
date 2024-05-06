@@ -1,11 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './css/Cardscreators.css';
+import {urlcreators, buttonlike} from '../Assets/Assets';
 
 function Cardscreators() {
-  const urlcreators = "https://github.com/GreiskelS/Assets.proyects/blob/main/assets/DSC08400.JPG?raw=true";
-  const buttonlike = "src/assets/like.png";
-
   return (
     <div className='cardcreators'>
       <a href="/">
