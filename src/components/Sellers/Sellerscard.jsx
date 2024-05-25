@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/sellers.css';
+import './css/Sellers.css';
 import {urlsellers} from '../Assets/Assets';
 
 const Sellerscard = () => {
